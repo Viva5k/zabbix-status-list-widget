@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2.0,
+    "id": "zabbix_status_list",
+    "type": "widget",
+    "name": "Status List Widget",
+    "namespace": "ZabbixStatusList",
+    "version": "1.0",
+    "author": "Viva5k",
+    "actions": {
+        "widget.zabbix_status_list.view": {
+            "class": "WidgetView"
+        },
+        "widget.zabbix_status_list.edit": {
+            "class": "WidgetEdit"
+        }
+    },
+    "widget": {
+        "js_class": "WidgetZabbixStatusList",
+        "in": {
+            "time_period": {
+                "type": "_timeperiod"
+            }
+        }
+    },
+    "assets": {
+        "css": ["widget.css"],
+        "js": ["class.widget.js"]
+    }
+}
